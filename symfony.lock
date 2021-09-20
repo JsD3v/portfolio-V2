@@ -2,6 +2,19 @@
     "composer/package-versions-deprecated": {
         "version": "1.11.99.4"
     },
+    "connectholland/cookie-consent-bundle": {
+        "version": "0.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "0.4",
+            "ref": "9725d24dc996a1041f25b9e29fc1567a861f98e4"
+        },
+        "files": [
+            "./config/packages/ch_cookie_consent.yaml",
+            "./config/routes/ch_cookie_consent.yaml"
+        ]
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -105,6 +118,9 @@
     },
     "nikic/php-parser": {
         "version": "v4.13.0"
+    },
+    "nzo/file-downloader-bundle": {
+        "version": "v4.1.0"
     },
     "phar-io/manifest": {
         "version": "2.0.3"
@@ -513,6 +529,9 @@
         "version": "v5.3.4"
     },
     "symfony/string": {
+        "version": "v5.3.7"
+    },
+    "symfony/templating": {
         "version": "v5.3.7"
     },
     "symfony/translation": {

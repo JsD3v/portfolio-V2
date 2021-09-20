@@ -1,19 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Jean-Sébastien Christophe || Développeur web</title>
+        <meta name="robots" content="index, follow" />
+        <meta name="description" content="Voici mon portfolio regroupant mes différents projets, il sera mis à jour au fur et mesure des expériences gagnées">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('Assets/images/favicon.ico') }}">
+        <title>{% block title %}{% endblock %}</title>
         {# Run `composer require symfony/webpack-encore-bundle`
            and uncomment the following Encore helpers to start using Symfony UX #}
         {% block stylesheets %}
-            {#{{ encore_entry_link_tags('app') }}#}
+            <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+            <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="{{ asset('Assets/css/vendor/bootstrap.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('Assets/css/vendor/slick.css') }}">
+            <link rel="stylesheet" href="{{ asset('Assets/css/vendor/slick-theme.css') }}">
+            <link rel="stylesheet" href="{{ asset('Assets/css/vendor/aos.css') }}">
+            <link rel="stylesheet" href="{{ asset('Assets/css/plugins/feature.css') }}">
+            <!-- Style css -->
+            <link rel="stylesheet" href="{{ asset('Assets/css/style.css') }}">
         {% endblock %}
 
-        {% block javascripts %}
-            {#{{ encore_entry_script_tags('app') }}#}
-        {% endblock %}
+
     </head>
     <body>
         {% block body %}{% endblock %}
+        {% block javascripts %}
+            <script src="{{ asset('Assets/js/vendor/jquery.js') }}"></script>
+            <script src="{{ asset('Assets/js/vendor/modernizer.min.js') }}"></script>
+            <script src="{{ asset('Assets/js/vendor/feather.min.js') }}"></script>
+            <script src="{{ asset('Assets/js/vendor/slick.min.js') }}"></script>
+            <script src="{{ asset('Assets/js/vendor/bootstrap.js') }}"></script>
+            <script src="{{ asset('Assets/js/vendor/text-type.js') }}"></script>
+            <script src="{{ asset('Assets/js/vendor/wow.js') }}"></script>
+            <script src="{{ asset('Assets/js/vendor/aos.js') }}"></script>
+            <script src="{{ asset('Assets/js/vendor/particles.js') }}"></script>
+            <!-- main JS -->
+            <script src="{{ asset('Assets/js/main.js') }}"></script>
+            <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+        {% endblock %}
     </body>
 </html>
