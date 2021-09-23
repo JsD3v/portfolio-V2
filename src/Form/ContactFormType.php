@@ -55,8 +55,10 @@ class ContactFormType extends AbstractType
                 'required' => true,
                 'attr'=>[
                     'type'=>'checkbox',
+                    'id'=>'toggle-two',
                     'checked data-toggle'=>'toggle',
-                    'data-on'=>'on',
+                    'date-on'=>'ok',
+                    'data-off'=>'non',
                     'data-style'=>'slow',
                     'data-onstyle'=>'outline-info',
                     'data-size'=>'lg'
@@ -68,7 +70,7 @@ class ContactFormType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => Contact::class,
+            //voir si besoin
         ]);
     }
 }

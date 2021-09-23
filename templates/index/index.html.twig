@@ -17,7 +17,7 @@
             <div class="header-left">
                 <div class="logo">
                     <a href="#">
-                        <img src="assets/images/portfolio/logoJS.png" alt="logo" width="15%">
+                        <img src="Assets/images/portfolio/logoJS.png" alt="logo" width="15%">
                     </a>
                 </div>
             </div>
@@ -63,7 +63,7 @@
         <div class="menu-top">
             <div class="menu-header">
                 <a class="logo" href="index.html">
-                    <img src="assets/images/portfolio/logo-menu2.png" alt="Portfolio de jean-sébastien christophe">
+                    <img src="Assets/images/portfolio/logo-menu2.png" alt="Portfolio de jean-sébastien christophe">
                 </a>
                 <div class="close-button">
                     <button class="close-menu-activation close"><i data-feather="x"></i></button>
@@ -101,6 +101,16 @@
 <main class="main-page-wrapper">
 
     <!-- Start Slider Area -->
+    {% for message in app.flashes ('success') %}
+                        <div class="alert alert-success">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                    {% for message in app.flashes('danger') %}
+                        <div class="alert alert-danger">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
     <div id="home" class="rn-slide-area">
         <div class="slide slider-style-3">
             <div class="container">
@@ -135,10 +145,10 @@
 
                                 <div class="col-xl-12 col-lg-12 col-12">
                                     <div class="user-info-bottom">
-                                        <span>Télécharger mon cv: </span>
+                                        <span>En savoir plus sur moi: </span>
                                         <div class="button-wrapper d-flex">
-                                            <a class="rn-btn mr--30" href="#contacts"><i class="fas fa-download"></i>
-                                                <span></span></a>
+                                            <a class="rn-btn mr--30" href="https://www.linkedin.com/in/jean-s%C3%A9bastien-christophe-67289b185/"><i class="fab fa-linkedin-in"></i>
+                                            </a>
                                             <a class="rn-btn" href="#contacts"><span>Me contacter</span></a>
                                         </div>
                                     </div>
@@ -151,7 +161,7 @@
                     <div class="order-1 order-xl-2 col-lg-12 col-xl-7">
                         <div class="background-image-area">
                             <div class="thumbnail-image">
-                                <img src="assets/images/portfolio/jeansebastien-christophe-glitch.png" alt="image de profil de jschristophe">
+                                <img src="Assets/images/portfolio/jeansebastien-christophe-glitch.png" alt="image de profil de jschristophe" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -179,7 +189,7 @@
                     <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="experience-style-two">
                         <div class="experience-left">
                             <div class="experience-image">
-                                <a href="https://www.neuropsychologue-ducoup-becker.com"><img src="assets/images/portfolio/construction-site-web-jschristophe.png" alt="Site-vitrine-mis-à-jour"></a>
+                                <a href="https://www.neuropsychologue-ducoup-becker.com"><img src="Assets/images/portfolio/construction-site-web-jschristophe.png" alt="Site-vitrine-mis-à-jour" loading="lazy"></a>
                             </div>
                             <div class="experience-center">
                                 <span class="date">2018-Aujourd'hui</span>
@@ -204,7 +214,7 @@
                     <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" class="experience-style-two">
                         <div class="experience-left">
                             <div class="experience-image">
-                                <a href="https://test.jsgame-on.fr"><img src="assets/images/portfolio/site-ou-ecommerce-cms-woocommerce.png" alt="Site-ou-ecommerce-sous-cms"></a>
+                                <a href="https://test.jsgame-on.fr"><img src="Assets/images/portfolio/site-ou-ecommerce-cms-woocommerce.png" alt="Site-ou-ecommerce-sous-cms" loading="lazy"></a>
                             </div>
                             <div class="experience-center">
                                 <span class="date">2020-2021</span>
@@ -229,7 +239,7 @@
                     <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="experience-style-two">
                         <div class="experience-left">
                             <div class="experience-image">
-                                <a href="https://jsgame-on.fr/public/"><img src="assets/images/portfolio/Site-sur-mesure-alsace.png" alt="Site dynamique sous symfony"></a>
+                                <a href="https://jsgame-on.fr/public/"><img src="Assets/images/portfolio/Site-sur-mesure-alsace.png" alt="Site dynamique sous symfony" loading="lazy"></a>
                             </div>
                             <div class="experience-center">
                                 <span class="date">2021-Aujourd'hui</span>
@@ -273,7 +283,7 @@
                     <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="experience-style-two">
                         <div class="experience-left">
                             <div class="experience-image">
-                                <img src="assets/images/portfolio/ccicampus-colmar.png" alt="Personal Portfolio">
+                                <img src="Assets/images/portfolio/ccicampus-colmar.png" alt="Personal Portfolio" loading="lazy">
                             </div>
                             <div class="experience-center">
                                 <span class="date">2020-2021</span>
@@ -298,7 +308,7 @@
                     <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" class="experience-style-two">
                         <div class="experience-left">
                             <div class="experience-image">
-                                <img src="assets/images/portfolio/React-JS.png" alt="Personal Portfolio">
+                                <img src="Assets/images/portfolio/React-JS.png" alt="Personal Portfolio" loading="lazy">
                             </div>
                             <div class="experience-center">
                                 <span class="date">2021-Aujourd'hui</span>
@@ -322,7 +332,7 @@
                     <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" class="experience-style-two">
                         <div class="experience-left">
                             <div class="experience-image">
-                                <img src="assets/images/portfolio/technologies-web-en-2021.png" alt="Personal Portfolio">
+                                <img src="Assets/images/portfolio/technologies-web-en-2021.png" alt="Personal Portfolio" loading="lazy">
                             </div>
                             <div class="experience-center">
                                 <span class="date">2020-Aujourd'hui</span>
@@ -665,11 +675,9 @@
     <div id="opinions" class="rn-education-area rn-section-gap section-separator">
         <div class="text-lg-center">
             <p>Les derniers avis : </p>
-        </div>
-        <div class="form-group">
-            <label for="votre email">
-                <input type="email">
-            </label>
+            <em>Fonctionnalitée prochainement disponible, un peu de patience.<br>
+                Pour toutes demandes veuillez passer par le formulaire ci-dessous.
+                 </em>
         </div>
     </div>
     <!-- Start Contact Form personnalisé -->
@@ -687,43 +695,33 @@
                 <div class="col-lg-12">
                         <!-- Début du formulaire de contact  -->
 
-                    {{ form_start(form) }}
-                    {% for message in app.flashes ('success') %}
-                        <div class="alert alert-success">
-                            {{ message }}
-                        </div>
-                    {% endfor %}
-                    {% for message in app.flashes('danger') %}
-                        <div class="alert alert-danger">
-                            {{ message }}
-                        </div>
-                    {% endfor %}
+                    {{ form_start(contact) }}
                         <div class="rn-portfolio-slick">
                             <form action="">
                                 <div class="form-row">
                                     <div class="form-group col-md-4">
-                                        {{ form_row(form.nom) }}
+                                        {{ form_row(contact.nom) }}
                                     </div>
                                     <div class="form-group col-md-4">
-                                       {{ form_row(form.prenom) }}
+                                       {{ form_row(contact.prenom) }}
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    {{ form_row(form.email) }}
+                                    {{ form_row(contact.email) }}
                                 </div>
                                 <div class="form-group">
-                                    {{ form_row(form.text) }}
+                                    {{ form_row(contact.text) }}
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-check mb-2">
-                                        {{ form_row(form.checkbox) }}
+                                        {{ form_row(contact.checkbox) }}
                                     </div>
                                 </div>
                                 <div>
                                     <input type="submit" class="btn btn-outline-success">
                                 </div>
                             </form>
-                            {{ form_end(form) }}
+                            {{ form_end(contact) }}
 
                         </div>
                         <!-- Fin du formulaire   -->
@@ -740,7 +738,7 @@
         <div class="row">
             <div class="col-xl-3 col-12 col-lg-3 col-md-6 col-sm-6 col-12">
                 <div class="logo-thumbnail">
-                    <a href="#"><img src="assets/images/portfolio/logo-menu2.png" alt="logo-image"></a>
+                    <a href="#"><img src="Assets/images/portfolio/logo-menu2.png" alt="logo-image de jean-sébastien christophe" loading="lazy"></a>
                 </div>
                 <div class="social-icone-wrapper">
                     <ul class="social-share d-flex liststyle">
